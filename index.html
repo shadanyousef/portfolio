@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>My Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/css/bootstrap.css">
+    <link rel="stylesheet" href="style/css/bootstrap.css.map">
+    <link rel="stylesheet" href="style/css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+ 
+    <body>
+        <header class="header">
+            <a href="#" id="logo">My Portfolio</a>
+            <nav class="navbar">
+                <div class="menu-toggle" onclick="toggleMenu()">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <div class="menu-items">
+                    <a href="#me" style="--i:1;" class="active">About Me</a>
+                    <a href="#projects" style="--i:2;">Projects</a>
+                    <a href="#skills" style="--i:3;">Skills</a>
+                    <a href="#Education" style="--i:4;">Education</a>
+                    <a href="#Courses" style="--i:4;">Courses</a>
+                    <a href="#Contact" style="--i:5;">Contact</a>
+                </div>
+            </nav>
+        </header>
+        <section class="home">
+            <div class="socials">
+                <a href="http://linkedin.com/in/shadan-yousef-6b6361259" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/shadanyousef?tab=repositories" target="_blank"><i class='bx bxl-gitlab'></i></a>
+                <a href="https://instagram.com/_12shadan?igshid=OGQ5ZDc2ODk2ZA==" target="_blank"><i class='bx bxl-instagram'></i></a>
+                <a href="https://twitter.com/Avacadoisonfire" target="_blank"><i class='bx bxl-twitter'></i></a>
+            </div>
+            <div class="home-content">
+                <h1 id="me">Hey, I'm Shadan Yousef</h1>
+                <h3>Software Engineer Student</h3>
+                <p>I'm interested in web development, Frontend Development, UX/UI<br> I consider My Self Hardworking , Passionate ,Creative </p>
+                <a href="Img/cv.jpg" class="btn btn-dark" target="_blank" >My CV</a>
+            </div>
+            <div class="home-img">
+                <div class="glowing-circle">
+                    <span></span>
+                    <span></span>
+                    <div class="img">
+                        <img src="Img/img.png" alt="a profile picture">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+    <div class="sections">
+        <section class="info">
+            <h3>Education</h3>
+            <article id="Education">
+                <h3>University Of Jeddah</h3>
+                <p>Bachelor Degree</p>
+                <p>Major: Software Engineering</p>
+                <p>Start year: 2021<br>End year: 2025</p>
+            </article>
+        </section>
+        <section class="info">
+            <h3>Courses</h3>
+            <article id="Courses"> 
+                <h3>Certificate</h3>
+                <p>Business analysis certificate By Misk</p>
+                <p>User Experience certificate By Misk</p>
+                <p>Frontend developer certificate By Meta</p>
+                <p>UX/UI certificate By Google</p>
+            </article>
+        </section>
+        <section class="info">
+            <h3>Skills</h3>
+            <article id="skills">
+                 <h3>Web Development</h3>
+                <p>HTML, CSS, JavaScript</p>
+                <p>Communication</p>
+                <p>Time Management</p>
+                <p>Team Leadership</p>
+                <p>UX/UI</p>
+    
+            </article>
+        </section>
+    </div>
+
+    <section id="projects">
+        <h1>My Projects</h1>
+       
+        <figure class="figure">
+             <h5>Spotify clone project</h5>
+            <img src="Img/pro1.png" class="figure-img img-fluid rounded" alt="Spotify clone project picture">
+            <figcaption class="figure-caption">I did this simple project on my own to level up <br>my skills on Web developmnet, I used Html and css only.<br>
+                <a href="https://github.com/shadanyousef/spotify-clone" class="btn btn-dark" target="_blank">GitHub</a></figcaption>
+          </figure>
+
+          <figure class="figure">
+            <h5>Yahoo project</h5>
+           <img src="Img/proj2.png" class="figure-img img-fluid rounded" alt="Yahoo project picture">
+           <figcaption class="figure-caption">Me and my group did this project for UX subject. <br>we redid yahoo website to enhance the Usability <br>
+            <a href="https://www.figma.com/file/PTKnJkcDJyGSVN9vgS1Got/Untitl" class="btn btn-dark" target="_blank">Prototype</a></figcaption>
+         </figure>
+
+         <figure class="figure">
+            <h5>My Bill project</h5>
+           <img src="Img/proj3.png" class="figure-img img-fluid rounded" alt="My Bill project picture">
+           <figcaption class="figure-caption">Me and my group created my Bill app <br>that aims to develop a financial
+            platform that simplifies <br>the management
+            of bills for users<br><br></figcaption>
+         </figure>
+
+         <figure class="figure">
+            <h5>Weather-app Project</h5>
+           <img src="Img/proj4.png" class="figure-img img-fluid rounded" alt="Weather-app Project">
+           <figcaption class="figure-caption">I created a simple weather app on my own <br>to enhance my skills on web development <br>using Html & Js & Css <br>
+            <a href="https://github.com/shadanyousef/weather-app" class="btn btn-dark" target="_blank">GitHub</a></figcaption>
+
+         </figure>
+        
+    </section>
+    <footer id="Contact">
+        <h5 >For Contact</h5>
+        <label>Phone number:</label>
+        <a href="tel:+966546779955">+966546779955</a><br>
+        <label>Email:</label>
+        <a href="mailto:Shadanyousef19@hotmail.com">Shadanyousef19@hotmail.com</a>
+    </footer>
+    <script>
+        function toggleMenu() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const menuItems = document.querySelector('.menu-items');
+
+            menuToggle.classList.toggle('open');
+            menuItems.classList.toggle('open');
+        }
+    </script>
+</body>
+</html>
